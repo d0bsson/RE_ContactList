@@ -8,6 +8,7 @@
 import UIKit
 
 class TableViewController: UITableViewController {
+    private let contacts = Person.getPerson()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,14 +16,11 @@ class TableViewController: UITableViewController {
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        contacts.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath)
-
-        // Configure the cell...
 
         return cell
     }

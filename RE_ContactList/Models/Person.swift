@@ -14,7 +14,7 @@ struct Person {
 }
 
 extension Person {
-    func getPerson() -> [Person] {
+    static func getPerson() -> [Person] {
         var contacts: [Person] = []
         
         let names = Contact.shared.names.shuffled()
