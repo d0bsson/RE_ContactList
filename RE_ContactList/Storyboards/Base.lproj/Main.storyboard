@@ -11,7 +11,7 @@
         <!--Item-->
         <scene sceneID="yNW-zh-MsG">
             <objects>
-                <tableViewController id="gYX-9l-AGL" sceneMemberID="viewController">
+                <tableViewController id="gYX-9l-AGL" customClass="ContactTableViewController" customModule="RE_ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jXX-Ip-jdY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,7 +25,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="7Gs-AV-Vr3" kind="show" id="w9W-qZ-OLo"/>
+                                    <segue destination="Zhy-1t-Eb7" kind="presentation" id="seJ-32-cnk"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -45,7 +45,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="KdB-XN-g08" customClass="ContactInfoViewController" customModule="RE_ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Usg-ul-FVB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="0Og-eq-zww">
@@ -84,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NZ8-nI-kno" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3508.6956521739135" y="77.678571428571431"/>
+            <point key="canvasLocation" x="3819" y="78"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="4lb-w1-foS">
@@ -136,23 +136,23 @@
             <point key="canvasLocation" x="822" y="828"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="vAS-Iz-XSY">
+        <scene sceneID="mwj-qx-fCX">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="7Gs-AV-Vr3" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Zhy-1t-Eb7" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="rS2-3P-djB"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bsD-Gg-EHZ">
+                    <navigationItem key="navigationItem" id="qva-mD-cMj"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="C7h-vc-vjk">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="KdB-XN-g08" kind="relationship" relationship="rootViewController" id="INq-Pb-6q7"/>
+                        <segue destination="KdB-XN-g08" kind="relationship" relationship="rootViewController" id="nMI-vs-eGu"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="D08-cJ-r8T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oni-H1-t2r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2598.5507246376815" y="77.678571428571431"/>
+            <point key="canvasLocation" x="2810" y="78"/>
         </scene>
     </scenes>
     <resources>

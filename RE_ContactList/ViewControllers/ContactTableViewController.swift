@@ -7,38 +7,35 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
-    var person: Person!
+class ContactTableViewController: UITableViewController {
     
-    private let contacts = Person.getPerson()
+    private let persons = Person.getPerson()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(persons)
     }
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        contacts.count
+        persons.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath)
-
+        let person = persons[indexPath.row]
+        var content = cell.defaultContentConfiguration()
+        content.text = person.fullName
+        cell.contentConfiguration = content
         return cell
     }
-    
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    
-
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let contactInfoVC = segue.destination as? ContactInfoViewController else { return }
-        person.phone = contactInfoVC.phoneLabel.text ?? ""
-        person.email = contactInfoVC.emailLabel.text ?? ""
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        let person = persons[indexPath.row]
+        contactInfoVC.person = person
     }
     
 

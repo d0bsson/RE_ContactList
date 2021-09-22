@@ -19,7 +19,7 @@ struct Person {
 
 extension Person {
     static func getPerson() -> [Person] {
-        var contacts: [Person] = []
+        var persons: [Person] = []
         
         let names = Contact.shared.names.shuffled()
         let secondNames = Contact.shared.secondNames.shuffled()
@@ -33,9 +33,9 @@ extension Person {
                 email: emails[index],
                 phone: phones[index]
             )
-            contacts.append(contact)
+            persons.append(contact)
         }
-        return contacts
+        return persons
     }
 }
 
