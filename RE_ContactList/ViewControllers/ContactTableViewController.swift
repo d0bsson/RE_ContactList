@@ -13,7 +13,6 @@ class ContactTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(persons)
     }
 
     // MARK: - Table view data source
