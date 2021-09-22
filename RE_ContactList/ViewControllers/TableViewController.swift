@@ -8,6 +8,8 @@
 import UIKit
 
 class TableViewController: UITableViewController {
+    var person: Person!
+    
     private let contacts = Person.getPerson()
 
     override func viewDidLoad() {
@@ -34,7 +36,9 @@ class TableViewController: UITableViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        guard let contactInfoVC = segue.destination as? ContactInfoViewController else { return }
+        person.phone = contactInfoVC.phoneLabel.text ?? ""
+        person.email = contactInfoVC.emailLabel.text ?? ""
     }
     
 

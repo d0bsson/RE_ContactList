@@ -25,7 +25,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="KdB-XN-g08" kind="show" id="w9W-qZ-OLo"/>
+                                    <segue destination="7Gs-AV-Vr3" kind="show" id="w9W-qZ-OLo"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -40,12 +40,12 @@
             </objects>
             <point key="canvasLocation" x="1731.8840579710147" y="77.678571428571431"/>
         </scene>
-        <!--View Controller-->
+        <!--Contact Info View Controller-->
         <scene sceneID="v8d-Pv-qcB">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="KdB-XN-g08" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="KdB-XN-g08" customClass="ContactInfoViewController" customModule="RE_ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Usg-ul-FVB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="0Og-eq-zww">
@@ -76,10 +76,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="bGa-LV-6U5"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="dfK-LT-pDl" id="dzX-7p-7Y4"/>
+                        <outlet property="fullNameLabel" destination="RPy-qY-b08" id="5Mp-UQ-bPX"/>
+                        <outlet property="phoneLabel" destination="irQ-eO-gMP" id="iHJ-Pf-mQk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NZ8-nI-kno" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2599" y="78"/>
+            <point key="canvasLocation" x="3508.6956521739135" y="77.678571428571431"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="4lb-w1-foS">
@@ -87,6 +92,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="8i2-gH-LN9" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NdH-Uy-QZI">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -102,7 +108,6 @@
         <!--Item-->
         <scene sceneID="wiP-rd-EvG">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pSO-K7-5nL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="df9-7Y-WRs" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="s0X-iz-Kgo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -126,8 +131,28 @@
                     <tabBarItem key="tabBarItem" title="Item" id="XwS-yM-VNu"/>
                     <navigationItem key="navigationItem" id="QtW-py-pIb"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pSO-K7-5nL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="822" y="828"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vAS-Iz-XSY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="7Gs-AV-Vr3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="rS2-3P-djB"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bsD-Gg-EHZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KdB-XN-g08" kind="relationship" relationship="rootViewController" id="INq-Pb-6q7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D08-cJ-r8T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2598.5507246376815" y="77.678571428571431"/>
         </scene>
     </scenes>
     <resources>

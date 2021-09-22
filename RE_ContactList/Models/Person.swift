@@ -9,8 +9,12 @@
 struct Person {
     let name: String
     let secondName: String
-    let email: String
-    let phone: String
+    var email: String
+    var phone: String
+    
+    var fullName: String {
+        "\(name) \(secondName)"
+    }
 }
 
 extension Person {

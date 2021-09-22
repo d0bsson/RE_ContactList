@@ -15,6 +15,7 @@
 		D762753826F9E47D0057332E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D762753726F9E47D0057332E /* TableViewController.swift */; };
 		D762753B26F9EA440057332E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D762753A26F9EA440057332E /* Person.swift */; };
 		D762753E26F9EACA0057332E /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = D762753D26F9EACA0057332E /* Contact.swift */; };
+		D762754B26FA19440057332E /* ContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D762754A26FA19440057332E /* ContactInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D762753726F9E47D0057332E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		D762753A26F9EA440057332E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		D762753D26F9EACA0057332E /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		D762754A26FA19440057332E /* ContactInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				D762753726F9E47D0057332E /* TableViewController.swift */,
+				D762754A26FA19440057332E /* ContactInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D762754B26FA19440057332E /* ContactInfoViewController.swift in Sources */,
 				D762753E26F9EACA0057332E /* Contact.swift in Sources */,
 				D762753B26F9EA440057332E /* Person.swift in Sources */,
 				D762752226F9E39D0057332E /* AppDelegate.swift in Sources */,
