@@ -51,19 +51,13 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="📨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOX-6t-SlZ">
-                                <rect key="frame" x="17" y="192" width="35" height="37"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="6qb-j1-cK0"/>
-                                </constraints>
+                                <rect key="frame" x="17" y="192" width="43" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="📞" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVq-Vy-TLM">
-                                <rect key="frame" x="17" y="140" width="35" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="b9F-Zz-nNS"/>
-                                </constraints>
+                                <rect key="frame" x="17" y="147" width="43" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -74,12 +68,14 @@
                         <constraints>
                             <constraint firstItem="wOX-6t-SlZ" firstAttribute="leading" secondItem="Gbc-Ar-bv7" secondAttribute="leading" constant="17" id="0ac-vX-vWA"/>
                             <constraint firstItem="wOX-6t-SlZ" firstAttribute="top" secondItem="Gbc-Ar-bv7" secondAttribute="top" constant="52" id="D1U-Yl-ARD"/>
+                            <constraint firstItem="oEp-gp-KVL" firstAttribute="leading" secondItem="XVq-Vy-TLM" secondAttribute="trailing" id="KUR-CV-aMS"/>
                             <constraint firstItem="oEp-gp-KVL" firstAttribute="top" secondItem="Gbc-Ar-bv7" secondAttribute="top" constant="24" id="NgM-97-sXu"/>
                             <constraint firstItem="0Og-eq-zww" firstAttribute="leading" secondItem="Gbc-Ar-bv7" secondAttribute="leading" constant="130" id="PRq-b5-jcv"/>
                             <constraint firstItem="0Og-eq-zww" firstAttribute="top" secondItem="Gbc-Ar-bv7" secondAttribute="top" constant="24" id="Tsw-Np-D1i"/>
                             <constraint firstItem="XVq-Vy-TLM" firstAttribute="leading" secondItem="Gbc-Ar-bv7" secondAttribute="leading" constant="17" id="d3f-x9-32A"/>
                             <constraint firstItem="oEp-gp-KVL" firstAttribute="leading" secondItem="Gbc-Ar-bv7" secondAttribute="leading" constant="60" id="eue-Rv-waR"/>
-                            <constraint firstItem="XVq-Vy-TLM" firstAttribute="top" secondItem="Gbc-Ar-bv7" secondAttribute="top" id="hte-51-Zx0"/>
+                            <constraint firstItem="oEp-gp-KVL" firstAttribute="leading" secondItem="wOX-6t-SlZ" secondAttribute="trailing" id="yQH-Ux-Pdb"/>
+                            <constraint firstItem="XVq-Vy-TLM" firstAttribute="top" secondItem="Gbc-Ar-bv7" secondAttribute="top" constant="7" id="z3W-N9-FQs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bGa-LV-6U5"/>

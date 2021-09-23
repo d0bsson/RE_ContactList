@@ -9,10 +9,11 @@ import UIKit
 
 class ContactTableViewController: UITableViewController {
     
-    private let persons = Person.getPerson()
+    private var persons = Person.getPerson()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.rightBarButtonItem = editButtonItem
     }
 
     // MARK: - Table view data source
@@ -27,6 +28,15 @@ class ContactTableViewController: UITableViewController {
         content.text = person.fullName
         cell.contentConfiguration = content
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let currentPerson = persons.remove(at: sourceIndexPath.row)
+        persons.insert(currentPerson, at: destinationIndexPath.row)
     }
     
     // MARK: - Navigation
