@@ -9,8 +9,8 @@
 struct Person {
     let name: String
     let secondName: String
-    var email: String
-    var phone: String
+    let email: String
+    let phone: String
     
     var fullName: String {
         "\(name) \(secondName)"
