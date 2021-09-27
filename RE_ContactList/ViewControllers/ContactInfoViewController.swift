@@ -8,7 +8,7 @@
 import UIKit
 
 class ContactInfoViewController: UIViewController {
-
+    
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     

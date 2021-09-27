@@ -10,12 +10,12 @@ import UIKit
 class TabBarViewController: UITabBarController {
     
     var persons = Person.getPersons()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tranferData()
     }
-
+    
     private func tranferData() {
         guard let contactTableVC = viewControllers?.first as? ContactTableViewController else { return }
         guard let contactWithSectionsVC = viewControllers?.last as? ContactWithSectionsTableTableViewController else { return }
